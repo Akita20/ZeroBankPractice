@@ -1,2 +1,4 @@
-package com.zerobank.utilities;public class DataUtilis {
+package com.zerobank.utilities;
+
+public class DataUtils {
 }

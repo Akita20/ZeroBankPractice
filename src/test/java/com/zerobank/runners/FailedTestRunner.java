@@ -1,2 +1,4 @@
-package com.zerobank.runners;public class FailedTestRunner {
+package com.zerobank.runners;
+
+public class FailedTestRunner {
 }

@@ -1,2 +1,4 @@
-package com.zerobank.pages;public class AccountSummaryPage {
+package com.zerobank.pages;
+
+public class AccountSummaryPage {
 }

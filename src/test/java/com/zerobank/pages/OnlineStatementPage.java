@@ -1,2 +1,4 @@
-package com.zerobank.pages;public class OnlineStatementPage {
+package com.zerobank.pages;
+
+public class OnlineStatementPage {
 }
