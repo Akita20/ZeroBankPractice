@@ -1,2 +1,4 @@
-package com.zerobank.pages;public class AccountActivePage {
+package com.zerobank.pages;
+
+public class AccountActivePage {
 }

@@ -1,2 +1,4 @@
-package com.zerobank.utilities;public class ConfigurationReader {
+package com.zerobank.utilities;
+
+public class ConfigurationReader {
 }

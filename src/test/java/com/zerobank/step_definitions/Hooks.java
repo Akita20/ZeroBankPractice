@@ -1,2 +1,4 @@
-package com.zerobank.step_definitions;public class Hooks {
+package com.zerobank.step_definitions;
+
+public class Hooks {
 }

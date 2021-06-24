@@ -1,2 +1,4 @@
-package com.zerobank.utilities;public class BrowserUtils {
+package com.zerobank.utilities;
+
+public class BrowserUtils {
 }

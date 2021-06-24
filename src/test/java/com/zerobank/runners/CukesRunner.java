@@ -1,2 +1,13 @@
-package com.zerobank.runners;public class CukesRunner {
+package com.zerobank.runners;
+
+@Runwith(Cucumber.class)
+@CucumberOptions(
+        plugin= {
+
+        }
+)
+
+
+
+public class CukesRunner {
 }

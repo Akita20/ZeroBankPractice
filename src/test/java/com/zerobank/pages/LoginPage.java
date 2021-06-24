@@ -1,2 +1,4 @@
-package com.zerobank.pages;public class LoginPage {
+package com.zerobank.pages;
+
+public class LoginPage {
 }
