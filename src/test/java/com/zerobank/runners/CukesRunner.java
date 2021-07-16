@@ -9,11 +9,12 @@ import org.junit.runner.RunWith;
         plugin = {
                 "json:target/cucumber.json",
                 "rerun:target/rerun.txt"
+
         },
         features = "src/test/resources/features",
         glue = "com/zerobank/step_definitions",
-        dryRun = true,
-        tags = "@Wip"
+        dryRun = false,
+        tags = "@smoke"
 )
 
 

@@ -1,12 +1,13 @@
 
-
+@Wip@regression @smoke
 Feature: User Login
+Background:
+Given user is on the login page
 
 
-@Wip
   Scenario: Login with valid credentials
     When user logs in with valid credentials
-    Then the page title should be "Zero -Account Summary"
+    Then the page title should be "Zero - Account Summary"
 
     Scenario Outline: Login with invalid credentials
       When user enters "<Username>" and "<Password">

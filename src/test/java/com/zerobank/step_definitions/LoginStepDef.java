@@ -1,4 +1,42 @@
 package com.zerobank.step_definitions;
 
+import com.zerobank.pages.LoginPage;
+import com.zerobank.utilities.ConfigurationReader;
+import com.zerobank.utilities.Driver;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+import static com.zerobank.utilities.BrowserUtils.getCurrentPageTitle;
+import static com.zerobank.utilities.BrowserUtils.waitUntilTitleIs;
+import static org.junit.Assert.assertEquals;
 public class LoginStepDef {
+    @Given("user is on the login page")
+    public void userIsOnTheLoginPage() {
+        Driver.get().get(ConfigurationReader.get("url"));
+    }
+    @When("user logs in with valid credentials")
+    public void user_logs_in_with_valid_credentials() {
+        new LoginPage().login();
+    }
+    @Then("the page title should be {string}")
+    public void the_page_title_should_be(String title) {
+       waitUntilTitleIs(title);
+       String actualTitle= getCurrentPageTitle();
+       assertEquals(title,actualTitle);
+    }
+
+    @When("user enters {string} and {string}>")
+    public void userEntersAnd(String username, String password) {
+        new LoginPage().login(username,password);
+    }
+    @Then("user should not be able to login")
+    public void user_Should_Not_Be_Able_To_Login() {
+        LoginPage loginPage= new LoginPage();
+        String expectedError= "Login and/or password are wrong.";
+        String actualError= loginPage.getErrorMessage();
+        assertEquals(expectedError,actualError);
+    }
+
+
 }
